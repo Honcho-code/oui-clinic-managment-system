@@ -1,0 +1,25 @@
+.banner {
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  margin-bottom: var(--space-4);
+  border: 1px solid transparent;
+}
+
+.banner-error {
+  background: var(--error-tint);
+  color: var(--error);
+  border-color: #ecc9c1;
+}
+
+.banner-success {
+  background: var(--success-tint);
+  color: var(--success);
+  border-color: #c9e2cd;
+}
+
+.banner-info {
+  background: var(--info-tint);
+  color: var(--info);
+  border-color: #c9dae4;
+}

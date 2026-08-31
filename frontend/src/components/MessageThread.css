@@ -1,0 +1,115 @@
+.thread {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  max-width: 640px;
+}
+
+.thread-scroll {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.thread-empty {
+  padding: var(--space-4) 0;
+}
+
+.thread-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thread-row.mine {
+  justify-content: flex-end;
+}
+
+.thread-bubble {
+  max-width: 78%;
+  background: var(--surface-sunken);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+
+.thread-row.mine .thread-bubble {
+  background: var(--primary-tint);
+}
+
+.thread-bubble.is-prescription {
+  background: var(--accent-tint);
+  border: 1px solid #e8cba9;
+}
+
+.thread-text {
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.thread-meta {
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.rx-card-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.rx-card-drug {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rx-card-instructions {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-top: 4px;
+}
+
+.rx-form {
+  border-top: 1px solid var(--border);
+  padding: var(--space-4);
+  background: var(--surface-sunken);
+}
+
+.rx-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.rx-form textarea {
+  width: 100%;
+}
+
+.thread-composer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+.thread-composer input {
+  flex: 1;
+}
+
+@media (max-width: 560px) {
+  .rx-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .thread-bubble {
+    max-width: 88%;
+  }
+}

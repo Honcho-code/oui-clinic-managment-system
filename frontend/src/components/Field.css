@@ -1,0 +1,56 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: var(--space-4);
+}
+
+.field-label {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.field-required {
+  color: var(--accent);
+}
+
+.field-message {
+  font-size: 12.5px;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.field-message-error {
+  color: var(--error);
+}
+
+.field-error input,
+.field-error select,
+.field-error textarea {
+  border-color: var(--error);
+}
+
+input, select, textarea {
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 9px 11px;
+  font-size: 14px;
+  color: var(--ink);
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: var(--font-body);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--ink-faint);
+}

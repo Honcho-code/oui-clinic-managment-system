@@ -1,0 +1,53 @@
+:root {
+  /* Color — deep clinical teal as the primary voice, warm off-white ground.
+     No purple/blue gradients, no glass. */
+  --bg: #FBFBF9;
+  --surface: #FFFFFF;
+  --surface-sunken: #F2F3F0;
+  --ink: #1C2321;
+  --ink-muted: #5B6663;
+  --ink-faint: #8B948F;
+  --border: #E2E5E2;
+  --border-strong: #C9CFC9;
+
+  --primary: #2F5D50;
+  --primary-hover: #244A40;
+  --primary-tint: #E8EFEC;
+
+  --accent: #B5652E;
+  --accent-tint: #F5E8DD;
+
+  --success: #3F7D53;
+  --success-tint: #E7F1E9;
+  --warning: #9A7300;
+  --warning-tint: #FBF3DC;
+  --error: #B3402C;
+  --error-tint: #FBE9E5;
+  --info: #3E6C8E;
+  --info-tint: #E7EFF4;
+
+  /* Type */
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* Spacing scale — used deliberately, not uniformly */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Radius — modest, not the huge-rounded-everything look */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  --shadow-sm: 0 1px 2px rgba(28, 35, 33, 0.06);
+  --shadow-md: 0 4px 14px rgba(28, 35, 33, 0.08);
+
+  --sidebar-width: 240px;
+}

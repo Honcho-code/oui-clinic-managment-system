@@ -4,6 +4,7 @@
 
 .student-topnav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: var(--space-6);
   padding: var(--space-4) var(--space-6);
